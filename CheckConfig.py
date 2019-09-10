@@ -4,7 +4,7 @@ import codecs
 #config1=ConfigParser.ConfigParser()
 parser = ConfigParser()
 candidates = ['does_not_exist.ini', 'also-does-not-exist.ini',
-              'simple.ini', 'multisection.ini',]
+              'simple.ini', 'multisection.ini',] #Just add the config file in the brackets, those are examples
               #Finding the configuration files, reading the loaded config files
 found = parser.read(candidates)
 missing = set(candidates) - set(found)
